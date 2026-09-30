@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  medvani:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: medvani_app
+    ports:
+      - "8080:80"
+    restart: always
